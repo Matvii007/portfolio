@@ -10,20 +10,18 @@ assets/      видео, постеры, фотография
 
 ## Залить на GitHub Pages
 
-Один раз:
+Терминал не нужен.
 
-```bash
-cd ~/Desktop/site && git init -b main && git add . && git commit -m "Портфолио" && gh repo create matvii-portfolio --public --source=. --push
-```
+1. Заходишь на **github.com** → зелёная кнопка **New** → имя `portfolio` → **Public** → **Create repository**.
+2. На пустой странице репозитория жмёшь ссылку **uploading an existing file**.
+3. Открываешь в Finder папку `~/Desktop/site`, выделяешь **всё, что внутри** (⌘A) — `index.html`, `style.css`, `README.md` и папку `assets` — и перетаскиваешь в окно браузера.
+   Саму папку `site` перетаскивать НЕ надо, только её содержимое.
+4. Ждёшь, пока догрузятся 10 МБ, и жмёшь **Commit changes**.
+5. **Settings → Pages → Source: Deploy from a branch → Branch: main → папка / (root) → Save.**
+6. Через 1–2 минуты обновляешь страницу Pages — там появится адрес вида
+   `https://твой-логин.github.io/portfolio/`
 
-Потом на GitHub: **Settings → Pages → Source: Deploy from a branch → main / (root) → Save.**
-Через пару минут сайт будет по адресу `https://<твой-логин>.github.io/matvii-portfolio/`.
-
-Дальше любое обновление:
-
-```bash
-cd ~/Desktop/site && git add . && git commit -m "Правка" && git push
-```
+Обновить потом: заходишь в репозиторий → **Add file → Upload files** → перетаскиваешь изменённые файлы → Commit.
 
 ## Что где править
 

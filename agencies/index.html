@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>For studios — Matvii Gerasymenko, product videos</title>
+<meta name="description" content="Product and launch videos for your studio's clients, built from your Figma or the live product, under your studio's name. You set the price, the client stays yours.">
+<meta property="og:title" content="Product videos for your studio's clients">
+<meta property="og:description" content="Built from your Figma or the live product, under your studio's name. You set the price, the client stays yours.">
+<meta property="og:image" content="../assets/polynome-floor-poster.jpg">
+<meta name="theme-color" content="#0A0A0A">
+<meta name="robots" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css">
+<style>
+  .a-hero{padding:150px clamp(20px,4vw,56px) clamp(56px,7vw,100px);max-width:1500px;margin:0 auto}
+  .a-hero .eyebrow{margin-bottom:clamp(20px,3vw,34px)}
+  .a-title{
+    font-family:Anton,"Arial Narrow",Impact,sans-serif;font-weight:400;text-transform:uppercase;
+    color:var(--ink);font-size:clamp(44px,7.4vw,118px);line-height:.92;letter-spacing:-.005em;max-width:15ch;
+  }
+  .a-title em{font-style:normal;color:var(--acid)}
+  .a-lead{max-width:760px;margin-top:clamp(26px,3.4vw,44px);color:var(--mut);font-size:clamp(17px,1.6vw,21px);line-height:1.55}
+  .a-lead b{color:var(--ink);font-weight:500}
+  .models{display:grid;grid-template-columns:1fr;gap:clamp(16px,2vw,28px)}
+  .card.main{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(20px,3vw,56px);align-items:start}
+  .card.main ul{padding-top:6px}
+  .card{background:var(--bg2);border:1px solid var(--line);border-radius:14px;padding:clamp(26px,3vw,44px)}
+  .card.main{border-color:rgba(207,242,72,.45)}
+  .card .k{font-size:11px;letter-spacing:.2em;color:var(--acid);margin-bottom:16px;display:block}
+  .card h3{font-family:Anton,"Arial Narrow",Impact,sans-serif;font-weight:400;text-transform:uppercase;font-size:clamp(28px,3vw,44px);line-height:1;margin-bottom:18px}
+  .card .price{font-family:Anton,"Arial Narrow",Impact,sans-serif;font-size:clamp(40px,4.6vw,70px);color:var(--acid);line-height:1;margin:6px 0 4px}
+  .card .price-n{font-size:11px;letter-spacing:.18em;color:var(--dim);margin-bottom:22px;display:block}
+  .card ul{list-style:none;display:grid;gap:11px}
+  .card li{color:var(--mut);padding-left:22px;position:relative}
+  .card li::before{content:"";position:absolute;left:0;top:.72em;width:9px;height:2px;background:var(--acid)}
+  .card li b{color:var(--ink);font-weight:500}
+  .incl{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:14px;overflow:hidden}
+  .incl div{background:var(--bg);padding:clamp(20px,2.4vw,32px)}
+  .incl .mono{font-size:11px;letter-spacing:.2em;color:var(--acid);display:block;margin-bottom:10px}
+  .incl p{color:var(--mut);font-size:16px}
+  .incl p b{color:var(--ink);font-weight:500}
+  .pwork{display:grid;grid-template-columns:repeat(2,1fr);gap:clamp(18px,2.4vw,34px)}
+  .pwork .meta h3{font-size:clamp(26px,2.6vw,38px);margin:16px 0 8px}
+  .pwork .tags{margin-bottom:10px}
+  .pwork .meta p{font-size:15.5px;margin-bottom:0}
+  @media (max-width:900px){.models,.pwork,.card.main{grid-template-columns:1fr}.incl{grid-template-columns:1fr}}
+  @page{size:A4;margin:0}
+  @media print{
+    html,body{background:#0A0A0A}
+    .models{grid-template-columns:1fr!important}.card.main{grid-template-columns:.8fr 1.2fr!important}.incl{grid-template-columns:repeat(3,1fr)!important}
+    .sec-head{break-after:avoid}#work,#process,#included,.models{break-inside:avoid}
+    .head,.sound,.foot,.no-print{display:none}
+    body{font-size:12px;background:#0A0A0A;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+    .a-hero{padding:24px 28px 20px}.sec{padding:22px 28px}
+    .sec-head{margin-bottom:16px}.sec-head h2{font-size:24px}
+    .a-title{font-size:46px}.a-lead{font-size:14px;margin-top:14px}
+    .card{padding:18px;break-inside:avoid}.card h3{font-size:22px}.card .price{font-size:34px}
+    .incl div{padding:12px}.incl p{font-size:12px}
+    .pwork{grid-template-columns:repeat(4,1fr);gap:12px}.pwork .meta p{display:none}.pwork .meta h3{font-size:16px;margin:8px 0 4px}
+    .steps li{grid-template-columns:40px 1fr;padding-bottom:10px;gap:10px}.steps h4{font-size:14px}.steps p{font-size:12px}
+    .contact .big{font-size:18px;margin-bottom:12px}.links a{padding:6px 14px;font-size:12px}
+  }
+</style>
+</head>
+<body>
+
+<header class="head">
+  <a class="mono brand" href="../">MG</a>
+  <nav class="mono nav">
+    <a href="#models">How it works</a>
+    <a href="#included">Included</a>
+    <a href="#work">Work</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main id="top">
+
+  <section class="a-hero">
+    <p class="mono eyebrow">FOR WEB, PRODUCT AND DEV STUDIOS</p>
+    <h1 class="a-title">The launch video <em>your client</em> asks for next</h1>
+    <p class="a-lead">You ship the site or the product. I make the product or launch video that goes on it, built from your Figma or the live build, <b>under your studio’s name</b>. <b>You set the price. The client stays yours.</b></p>
+  </section>
+
+  <section id="models" class="sec">
+    <div class="sec-head"><h2>How it works</h2><span class="rule"></span></div>
+    <div class="models">
+      <div class="card main">
+        <div><span class="mono k">UNDER YOUR STUDIO’S NAME</span>
+        <h3>You sell it, I make it</h3>
+        <p class="price">€1,200</p>
+        <span class="mono price-n">PER VIDEO · 50% BEFORE START · 50% ON DELIVERY</span></div>
+        <ul>
+          <li>You sell the video to your client at your own price and invoice them.</li>
+          <li>I run the video with your client directly, as your studio’s video partner, unless you’d rather keep that yourself.</li>
+          <li><b>The client stays yours.</b> I sign in writing that I never sell to them around you.</li>
+          <li>NDA is fine. My name isn’t on the files.</li>
+          <li>The video goes in my portfolio only if you say yes.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="included" class="sec">
+    <div class="sec-head"><h2>What a video includes</h2><span class="rule"></span></div>
+    <div class="incl">
+      <div><span class="mono">LENGTH</span><p><b>A product or launch video up to 90 seconds</b>, one 16:9 format.</p></div>
+      <div><span class="mono">BUILT FROM</span><p><b>The real interface</b>: your Figma or the live product. No grey placeholder bars.</p></div>
+      <div><span class="mono">CRAFT</span><p><b>Script, storyboard, UI animation, voice, music and sound</b>, one person start to finish.</p></div>
+      <div><span class="mono">APPROVAL</span><p><b>The client approves the storyboard</b> before a single layer moves.</p></div>
+      <div><span class="mono">REVISIONS</span><p><b>Two rounds</b> of revisions are part of it.</p></div>
+      <div><span class="mono">TIME</span><p><b>1–2 weeks</b> after the storyboard is approved. Delivered as MP4 + WebM.</p></div>
+    </div>
+    <p class="mono no-print" style="margin-top:18px;font-size:11px;letter-spacing:.16em;color:var(--dim)">VERTICAL CUTS AND SILENT LOOPS FOR THE SITE ON REQUEST · WHAT I NEED FROM YOU: ACCESS TO THE FIGMA OR THE BUILD, AND A BRIEF</p>
+  </section>
+
+  <section id="process" class="sec">
+    <div class="sec-head"><h2>How a project goes</h2><span class="rule"></span></div>
+    <ol class="steps">
+      <li><span class="mono n">01</span><div><h4>Brief</h4><p>A link to the product or the Figma, and who has to understand it.</p></div></li>
+      <li><span class="mono n">02</span><div><h4>Script and storyboard</h4><p>Every frame drawn with the words that play over it. Your client approves it before animation starts.</p></div></li>
+      <li><span class="mono n">03</span><div><h4>Animation, voice, sound</h4><p>Built from the real interface, then two rounds of revisions.</p></div></li>
+      <li><span class="mono n">04</span><div><h4>Delivery</h4><p>MP4 + WebM, 1–2 weeks after the storyboard is approved.</p></div></li>
+    </ol>
+  </section>
+
+  <section id="work" class="sec">
+    <div class="sec-head"><h2>Work</h2><span class="rule"></span></div>
+    <div class="pwork">
+      <article class="meta">
+        <div class="player"><video src="../assets/polynome-floor.mp4" poster="../assets/polynome-floor-poster.jpg" muted loop playsinline preload="none"></video><button class="mono sound" type="button">SOUND ON</button></div>
+        <h3>AI Floor Manager</h3>
+        <p class="mono tags">CLIENT · POLYNOME, DUBAI · 0:52</p>
+        <p>Made for Polynome’s stand at Seamless Middle East: store camera footage turned into tasks on the staff’s phones.</p>
+      </article>
+      <article class="meta">
+        <div class="player"><video src="../assets/loupe.mp4" poster="../assets/loupe-poster.jpg" muted loop playsinline preload="none"></video><button class="mono sound" type="button">SOUND ON</button></div>
+        <h3>Loupe</h3>
+        <p class="mono tags">CONCEPT · 1:02</p>
+        <p>An invented claims engine for car insurers: six photos in, a paid claim in under eight minutes.</p>
+      </article>
+      <article class="meta">
+        <div class="player"><video src="../assets/kilter.mp4" poster="../assets/kilter-poster.jpg" muted loop playsinline preload="none"></video><button class="mono sound" type="button">SOUND ON</button></div>
+        <h3>Kilter</h3>
+        <p class="mono tags">CONCEPT · 0:40</p>
+        <p>An invented AI tool that closes the month: forty thousand ledger lines pulling into two level bars.</p>
+      </article>
+      <article class="meta">
+        <div class="player"><video src="../assets/runtime.mp4" poster="../assets/runtime-poster.jpg" muted loop playsinline preload="none"></video><button class="mono sound" type="button">SOUND ON</button></div>
+        <h3>Runtime</h3>
+        <p class="mono tags">CONCEPT · 0:56</p>
+        <p>A concept video for an AI agent platform: one complaint traced to the line of code that caused it.</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="contact" class="sec contact">
+    <div class="sec-head"><h2>Contact</h2><span class="rule"></span></div>
+    <p class="big">Have a client launching soon? Send me the project and I’ll tell you how I’d open its video.</p>
+    <ul class="links">
+      <li><a href="mailto:matvey.gghit4@gmail.com">matvey.gghit4@gmail.com</a></li>
+      <li><a href="https://www.linkedin.com/in/matvii-gerasymenko/" target="_blank" rel="noopener">LinkedIn</a></li>
+      <li><a href="../">Full portfolio</a></li>
+    </ul>
+  </section>
+
+</main>
+
+<footer class="foot mono">
+  <span>MATVII GERASYMENKO</span>
+  <span>PREŠOV, SLOVAKIA · CET</span>
+  <span><a href="#top">BACK TO TOP</a></span>
+</footer>
+
+<script>
+const vids = document.querySelectorAll('.player video');
+const io = new IntersectionObserver(es => es.forEach(e => {
+  const v = e.target;
+  if (e.isIntersecting) { v.preload = 'auto'; v.play().catch(()=>{}); } else v.pause();
+}), { threshold: 0.35 });
+vids.forEach(v => io.observe(v));
+document.querySelectorAll('.player').forEach(p => {
+  const v = p.querySelector('video'), b = p.querySelector('.sound');
+  b.addEventListener('click', () => {
+    v.muted = !v.muted; b.textContent = v.muted ? 'SOUND ON' : 'SOUND OFF'; b.classList.toggle('live', !v.muted);
+    if (!v.muted) { vids.forEach(o => { if (o !== v) o.muted = true; });
+      document.querySelectorAll('.sound').forEach(o => { if (o !== b) { o.textContent = 'SOUND ON'; o.classList.remove('live'); } }); }
+    v.play().catch(()=>{});
+  });
+});
+</script>
+</body>
+</html>

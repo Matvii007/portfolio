@@ -56,17 +56,20 @@
     });
   }
 
-  // the film: adaptive stream (1080p / 720p / 480p). Safari plays HLS natively; elsewhere hls.js loads on first play.
+  // the film: adaptive stream (1080p / 720p / 480p). Wherever Media Source exists, hls.js (loaded on first play) drives it;
+  // browsers without it (older iPhones) play the HLS natively.
   const film = document.querySelector('[data-hls]');
   if (film) {
     const v = film.querySelector('video'), btn = film.querySelector('.play'), src = film.dataset.hls;
+    const native = () => { v.src = src; v.play().catch(() => {}); };
     const start = () => {
       btn.remove(); v.controls = true;
-      if (v.canPlayType('application/vnd.apple.mpegurl')) { v.src = src; v.play().catch(() => {}); return; }
+      if (!(window.MediaSource || window.ManagedMediaSource)) { native(); return; }
       const s = document.createElement('script');
       s.src = film.dataset.hlsjs;
+      s.onerror = native;
       s.onload = () => {
-        if (!window.Hls || !Hls.isSupported()) { v.src = film.dataset.fallback; v.play().catch(() => {}); return; }
+        if (!window.Hls || !Hls.isSupported()) { if (v.canPlayType('application/vnd.apple.mpegurl')) native(); else { v.src = film.dataset.fallback; v.play().catch(() => {}); } return; }
         const h = new Hls({ capLevelToPlayerSize: true, startLevel: -1 });
         h.loadSource(src); h.attachMedia(v);
         h.on(Hls.Events.MANIFEST_PARSED, () => v.play().catch(() => {}));
